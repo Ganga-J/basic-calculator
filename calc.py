@@ -19,13 +19,19 @@ def addition():
     return num1 + num2
 
 if sign == '+':
-    print(f"{num1} + {num2} = {addition()}")
+    addition_result = addition()
+    print(f"{num1} + {num2} = {addition_result}")
 elif sign == '-':
-    print(f"{num1} - {num2} = {subtraction()}")
+    subtraction_result = subtraction()
+    print (f"{num1} - {num2} = {subtraction_result}")
+  
 elif sign == '*': 
-    print(f"{num1} * {num2} = {multiplication()}")
+    multiplication_result = multiplication()
+    print(f"{num1} * {num2} = {multiplication_result}")
+
 elif sign == '/':
-    print(f"{num1} / {num2} = {division()}")
+    division_result = division()
+    print(f"{num1} / {num2} = {division_result}")
 else:
     print("Invalid operation. Please enter one of +, -, *, /.")
 # End of calculator/calc.py
